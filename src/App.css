@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 2rem;
 }
 
 .App-logo {
@@ -32,7 +33,83 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* Header card styles */
+
+.headerCardsContainer {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.headerCardsContainer .ant-card {
+  background-color: #fcf2de;
+  border-radius: 15px;
+  width: 50%;
+  height: 8rem;
+  padding: .5rem;
+  overflow: hidden;
+}
+
+.headerCardsContainer .ant-card .anticon {
+  background-color: white;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+.headerCardsContainer .ant-card:first-child {
+  margin-right: 2rem;
+  background-color: #dacbff;
+}
+
+.headerCardsSearchIcon {
+  padding: 1rem;
+}
+
+.headerCardInput {
+  padding: .75rem;
+  border-radius: 8px;
+}
+
+.cardSpanMailProject {
+  display: flex;
+}
+
+.cardSpanMailProject input {
+  border-radius: 8px;
+}
+
+/* Sidebar styles */
+
+.sidebar {
+  height: 72vh;
+  margin-right: 24px;
+  background-color: #dacbff !important;
+  padding: 1rem .5rem;
+  border-radius: 12px;
+  width: 18vw !important;
+}
+
+/*table  */
+
+.mainSection {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.ant-table-wrapper {
+  width: 85vw;
+}
+
+thead[class*="ant-table-thead"] th {
+  background-color: #fcf2de !important;
+}
+
+.monitorTableStyle .ant-table-container .ant-table-content table .ant-table-thead tr th:first-child {
+  border-radius: 12px !important;
 }
